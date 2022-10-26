@@ -1,9 +1,11 @@
 pipeline {
-  agent { dockerfile true }
+
   environment {
     registry = "lutovp/demoapp"
     registryCredential = 'dockerhub'
   }
+  
+  agent any
   
   
   stages {
