@@ -7,7 +7,7 @@ node("linux"){
         script {
           cur_tag=sh(returnStdout: true, script: "git tag ").trim()
         }
-        println ${cur_tag}
+        println cur_tag
     }
     stage("Sample define secret_check"){
         secret_check=true
