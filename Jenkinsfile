@@ -24,7 +24,7 @@ node("linux"){
 
     stage('Push image') {
         docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-            app.push(cur_tag)
+            app.push("${cur_tag}")
         }
     }    
 
