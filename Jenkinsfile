@@ -13,8 +13,6 @@ node("linux"){
         secret_check=true
     }
 
-  
-
     stage('Build image') {
         app = docker.build("lutovp/demoapp")
     }
