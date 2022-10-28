@@ -20,7 +20,7 @@ spec:
         app: demoapp
     spec:
       containers:
-      - image: lutovp/demoapp:v0.0.7
+      - image: lutovp/demoapp:v0.0.8
         imagePullPolicy: Always
         name: demoapp
         ports:

@@ -32,7 +32,8 @@ node("linux"){
 
 
     stage('Deploy App') {
-       withKubeConfig([credentialsId: '4476c052-e611-4579-8126-0be9d95a22fc', serverUrl: 'https://51.250.64.33:6443']) {
+       //withKubeConfig([credentialsId: '4476c052-e611-4579-8126-0be9d95a22fc', serverUrl: 'https://51.250.64.33:6443']) {
+     script {    
           sh 'kubectl apply -f kube_deploy.yml -n diplom-stage'
     }
   }
