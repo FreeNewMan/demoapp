@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - image: lutovp/demoapp:v0.0.6
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         name: demoapp
         ports:
         - containerPort: 8585
